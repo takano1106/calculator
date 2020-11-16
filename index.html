@@ -8,37 +8,39 @@
 </head>
 <body>
   <div class="calculator">
-    <input type="text" class="display" disabled>
-    <div>
-      <div>
-        <button value="7">7</button>
-        <button value="8">8</button>
-        <button value="9">9</button>
-        <button value="+">+</button>
-      </div>
-      <div>
-        <button value="4">4</button>
-        <button value="5">5</button>
-        <button value="6">6</button>
-        <button value="-">-</button>
-      </div>
-      <div>
-        <button value="1">1</button>
-        <button value="2">2</button>
-        <button value="3">3</button>
-        <button value="*">*</button>
-      </div>
-      <div>
-        <button value="0">0</button>
-        <button value=".">.</button>
-        <button value="C">C</button>
-        <button value="/">/</button>
-        <button value="=">=</button>
-      </div>
-    </div>
+    <form name="frm">
+      <table>
+        <tr>
+          <td colspan="4"><input id="box" type="text" size="12" name='display' value="0"></td>
+        </tr>
+        <tr>
+          <td><input id="num" type="button" value="7" onclick="viwe(7)"></td>
+          <td><input id="num" type="button" value="8" onclick="viwe(8)"></td>
+          <td><input id="num" type="button" value="9" onclick="viwe(9)"></td>
+          <td><input id="num" type="button" value="+" onclick="enzan('+')"></td>
+        </tr>
+        <tr>
+          <td><input id="num" type="button" value="4" onclick="viwe(4)"></td>
+          <td><input id="num" type="button" value="5" onclick="viwe(5)"></td>
+          <td><input id="num" type="button" value="6" onclick="viwe(6)"></td>
+          <td><input id="num" type="button" value="-" onclick="enzan('-')"></td>
+        </tr>
+        <tr>
+          <td><input id="num" type="button" value="1" onclick="viwe(1)"></td>
+          <td><input id="num" type="button" value="2" onclick="viwe(2)"></td>
+          <td><input id="num" type="button" value="3" onclick="viwe(3)"></td>
+          <td><input id="num" type="button" value="×" onclick="enzan('*')"></td>
+        </tr>
+        <tr>
+          <td><input id="num" type="button" value="0" onclick="viwe(0)"></td>
+          <td><input id="num" type="button" value="." onclick="viwe('.')"></td>
+          <td><input id="num" type="button" value="C" onclick="del()"></td>
+          <td><input id="num" type="button" value="÷" onclick="enzan('/')"></td>
+          <td><input id="num" type="button" value="=" onclick="enzan('=')"></td>
+        </tr>
+      </table>
+    </form>
   </div>
-  
-  
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
